@@ -6,3 +6,197 @@
   font-weight: 400;
   font-style: normal;
 }
+
+body {
+  margin: 0;
+}
+
+/* shared style */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.bg-primary {
+  background: rgba(255, 144, 14, 0.1);
+}
+
+.display-flex {
+  display: flex;
+}
+
+.dark-1 {
+  color: #131313;
+  ;
+}
+
+.dark-2 {
+  color: #727272;
+}
+
+.dark-3 {
+  color: #424242;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-primary {
+  color: white;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  background: rgba(255, 144, 14, 1);
+  padding: 1.1rem 1.2rem;
+  border: none;
+}
+
+/* Navbar-style */
+.navbar,
+.banner {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.brand {
+  font-size: 45px;
+}
+
+.nav-item {
+  list-style: none;
+  margin-left: 30px;
+}
+
+.nav-home {
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 18px;
+}
+
+/* banner related style */
+.banner-content {
+  text-align: center;
+  max-width: 862px;
+  margin: 0 auto;
+  margin-bottom: 3.1rem;
+}
+
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+.features {
+  align-items: center;
+  margin-top: 85px;
+
+}
+
+.feature-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "team1 team2"
+    "team3 team4";
+  gap: 24px;
+}
+
+.team1 {
+  grid-area: team1;
+}
+
+.team2 {
+  grid-area: team2;
+}
+
+.team3 {
+  grid-area: team3;
+}
+
+.team4 {
+  grid-area: team4;
+}
+
+
+.feature-image,
+.feature-content {
+  padding: 50px;
+}
+
+.feature-content h2 {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.quick-span {
+  font-weight: 400;
+}
+
+.feat-span {
+  color: #FF900E;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+
+  }
+
+  .nav-links {
+    background: #FF900E;
+    width: 100%;
+    padding: 10px;
+    font-weight: 700;
+    margin-top: -10px;
+    color: white;
+    justify-content: center;
+
+
+  }
+
+  .dark-3 {
+    color: white;
+  }
+
+  .brand {
+    margin: 20px auto;
+  }
+
+  .feature-image {
+
+    gap: 10px;
+  }
+
+  .features {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20;
+  }
+
+  .team1,
+  .team2,
+  .team3,
+  .team4 {
+    width: 100%;
+  }
+
+  .feature-image,
+  .feature-content {
+    padding: 10px;
+  }
+
+}
